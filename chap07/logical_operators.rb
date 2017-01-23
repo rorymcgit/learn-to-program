@@ -8,10 +8,12 @@ puts i_like_beer && i_eat_rocks
 puts i_am_purple && i_like_beer
 puts i_am_purple && i_eat_rocks
 puts
+
 puts i_am_chris || i_like_beer
 puts i_like_beer || i_eat_rocks
 puts i_am_purple || i_like_beer
 puts i_am_purple || i_eat_rocks
 puts
+
 puts !i_am_purple
 puts !i_am_chris
