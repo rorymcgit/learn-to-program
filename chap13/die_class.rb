@@ -21,7 +21,7 @@ class Die
   end
 
   def cheat
-    puts "Pick a number 1 - 6"
+    puts "Pick a number 1 - 6:"
     cheat_response = gets.chomp.to_i
     if (cheat_response <= 6) && (cheat_response >= 1)
       @number_showing = cheat_response
