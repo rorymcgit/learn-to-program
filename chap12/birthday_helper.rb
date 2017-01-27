@@ -10,20 +10,16 @@ birthday_hash = {
 "The King of Spain"=> Time.local(1938, 1, 5),
 }
 
-# puts birthday_hash
-
 puts "Which birthday would you like to know?"
 name_request = gets.chomp
 birthday = birthday_hash[name_request]
 if birthday == nil
   puts "No entry for that name."
 else
+  now = Time.new
+  age = now.year - birthday.year
 
-# birthday_refined = birthday_str.slice(0..(birthday_str.index(" ")))
-now = Time.new
-age = now.year - birthday.year
-
-bday_str = birthday.strftime("%B %d %Y")
-puts "#{name_request} was born on #{bday_str}."
-puts "He is #{age} years old and his next birthday is #{birthday.strftime("%B %d")}."
+  bday_str = birthday.strftime("%B %d %Y")
+  puts "#{name_request} was born on #{bday_str}."
+  puts "He is #{age} years old and his next birthday is #{birthday.strftime("%B %d")}."
 end
