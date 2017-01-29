@@ -3,7 +3,8 @@ def grandfather_clock(&block)
     hour = 12
   elsif Time.new.hour > 12
     hour = Time.new.hour - 12
-    # puts hour
+  else
+    hour = Time.new.hour
   end
   hour.times {block.call}
 end
